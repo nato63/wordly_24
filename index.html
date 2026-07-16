@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name ="viewpoint" content = "width=device-width, initial-scale =1.0">
+        <title>WORDLY</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="header_container">
+                <div id="header_brand">
+                     <img src="assets/new_logo_name-removebg-preview.png" alt="Wordly Logo" id="header-logo-img" />
+                    <span id="header_logo">Wordly</span>
+                    <span id="header_badge">Wordly is a single-page directorate application.</span>
+                </div>
+                </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="banner">
+                    <h1 class="banner_title">Explore <span>Words</span>,expand your <span>world</span>.</h1>
+                    <p class="banner_subtitle">Search for definition, pronunciation, synonyms among other with wordly. </p>
+                    <form class="search-form" id="searchForm" autocomplete="off">
+                        <div class="search-form__wrapper">
+                            
+                            <input type="text" class="search-form__input" id="wordInput" placeholder="Type a word… e.g. neuroscience" required />
+                            <button class="search-form__btn" type="submit">🔍</button>
+                        </div>
+                        <div class="loading"
+                            id="loadingMessage"
+                            role="status"
+                            aria-live="polite"
+                            style="display: none;">
+                            <span class="spinner"></span>
+                            <span>Searching dictionary...</span>
+                        </div>
+                </form>
+                </section>
+                <section class="results" id="resultsSection" style="display:none;">
+
+                    <div class="result-card">
+                        <div class="word-header">
+                            <div>
+                                <h2 id="wordDisplay">volume</h2>
+
+                                <div class="word-header__phonetic">
+                                    <span id="phoneticDisplay">/ˈvɒl.juːm/</span>
+
+                                    <button id="playAudioBtn"
+                                            class="audio-btn"
+                                            aria-label="Play pronunciation"
+                                            style="display:none;">
+                                        🔊
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button id="favoriteBtn"
+                                    class="btn-favorite"
+                                    aria-label="Save to favorites">
+                                ❤️
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>Definitions</h3>
+                        <div id="meaningsList"></div>
+                    </div>
+
+                    <div class="result-card" id="examplesContainer" style="display:none;">
+                        <h3>Examples</h3>
+                        <div id="examplesList"></div>
+                    </div>
+
+                    <div class="result-card" id="synonymsContainer" style="display:none;">
+                        <h3>Synonyms</h3>
+                        <div id="synonymsList"></div>
+                    </div>
+
+                    <div class="result-card">
+                        <p>
+                            Source:
+                            <a href="#" id="sourceLink" target="_blank" rel="noopener">
+                                Free Dictionary API
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="result-card"
+                        id="errorContainer"
+                        role="alert"
+                        style="display:none;">
+
+                        <h3>Word not found</h3>
+                        <p id="errorMessage">Please check your spelling and try again.</p>
+                    </div>
+
+                </section>
+                <section class="favorites" id="favoritesSection">
+
+                    <div class="favorites__header">
+                        <h2>❤️ Your Favorites</h2>
+                        <span id="favoritesCount">0</span>
+                    </div>
+
+                    <div id="favoritesEmpty">
+                        <p>No favorite words saved yet.</p>
+                    </div>
+
+                    <div id="favoritesList"></div>
+
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer container">
+                <p>&copy; 2026 <strong>Wordly</strong> . Built with for language lovers.</p>
+                <p class="footer_api">Data from <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">Free Dictionary API</a></p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
