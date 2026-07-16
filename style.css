@@ -6,7 +6,7 @@
 
 body{
     background: rgb(2, 36, 53);
-    font-family: 'Roboto', sans-serif;
+    font-family:system-ui, sans-serif;
     line-height: 1.6;
     color: white;
 }
