@@ -1,24 +1,25 @@
-##Wordly – Dictionary Web Application
+## Wordly – A Dictionary Web Application
 
-##Wordly is a simple single-page dictionary application built with HTML, CSS, and JavaScript. 
+### Wordly is a simple single-page dictionary application built with HTML, CSS, and JavaScript. 
 The goal of the project was to practice working with APIs, DOM manipulation, local storage, and 
 responsive web design while creating something useful and easy to use.
 
-##What the app does
+## What the app does
 
-Users can search for an English word and instantly presented with:
+When a user search the any word as log as its in the API it will give the following:
 
-The word itself
-Phonetic pronunciation text
-Audio pronunciation of the word (when available)
-Definitions of the word
-How its is used in sentences
-Synonyms or words that has the same meaning
-The source link from the dictionary API
+✔️The word itself
+✔️Phonetic pronunciation text
+✔️Audio pronunciation of the word (when available)
+✔️Definitions of the word
+✔️How its is used in sentences
+✔️Synonyms or words that has the same meaning
+✔️The source link from the dictionary API
 
-This web app updates the page dynamically without refreshing the browser.
 
-##Features
+
+## Features
+
 Search for any English word
 Play pronunciation audio
 View definitions grouped by part of speech
@@ -30,20 +31,14 @@ Search a saved word again with one click
 Favorites are stored in the browser using localStorage
 Responsive layout for both desktop and mobile devices
 
-##Technologies used
-HTML5
-CSS3
-Vanilla JavaScript
-Free Dictionary API
-API
-
-This project uses the Free Dictionary API:
+#### This project uses the Free Dictionary API:
 https://dictionaryapi.dev/
 
-##Example request:
+#### Example request:
 https://api.dictionaryapi.dev/api/v2/entries/en/money
 
-##Project structure
+## Project structure
+
 wordly/
 │
 ├── index.html
@@ -52,7 +47,7 @@ wordly/
 └── assets/
     └── logo files
 
-##How to run the project
+## How to run the project
 Download or clone the project.
 Open the project folder.
 Open index.html in your browser.
@@ -60,12 +55,12 @@ Start searching for words.
 
 No additional installation is required.
 
-##Future improvements
+## Future improvements
 Add a dark/light theme toggle
 Add recent search history
 Add support for multiple languages
 
 
-##Author
+## Author
 
-Built by Enoch kipngeno Nato
+~ Enoch Kipngeno Nato ~
